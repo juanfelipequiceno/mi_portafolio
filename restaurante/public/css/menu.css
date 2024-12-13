@@ -1,0 +1,32 @@
+.card-img-top {
+    width: 100%;       /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 300px;     /* Ajusta la altura de todas las imágenes para que sean uniformes */
+    object-fit: cover; /* Hace que la imagen se recorte si es necesario para llenar el espacio */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.h1 {
+    font-family: 'Poppins', 'cursive'; /* Nueva fuente moderna */
+    font-size: 4rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #ff7e5f; /* Color de la línea */
+    transform: scaleX(1); /* Línea siempre visible */
+    transform-origin: bottom right;
+}
+
+
+
+

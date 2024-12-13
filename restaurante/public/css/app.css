@@ -1,0 +1,70 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo para botones */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007bff; /* Color de fondo al pasar el mouse */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Animación para imágenes */
+.img-animate {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img-animate.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Estilos para animaciones */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+}
+
+.img-animate {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.img-animate.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*Menu de modulos */
+
+
+.navbar-nav .nav-link:hover {
+    color: #ff7e5f !important;
+    transform: translateY(-3px);
+    font-weight: bold;
+}
+
+/* Efecto para el botón de hamburguesa */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30"%3E%3Cpath fill="%23ffffff" d="M0 4h30v2H0zm0 7h30v2H0zm0 7h30v2H0z"%3E%3C/path%3E%3C/svg%3E');
+}
+
+.navbar-collapse {
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
