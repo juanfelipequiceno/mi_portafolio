@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0a0a23;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #b0b0b0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+.contact-left, .contact-right {
+    background: #16163456;
+    border-radius: 10px;
+    padding: 2rem;
+    flex: 1;
+}
+
+.contact-left h2, .contact-right h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-left p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #b0b0b0;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info i {
+    color: #4fc3f7;
+    font-size: 1.5rem;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-btn {
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition: background 0.3s;
+}
+
+.linkedin { background: #0077b5; }
+.linkedin:hover { background: #0055826a; }
+
+.github { background: #24292e69; }
+.github:hover { background: #1b1f236a; }
+
+.gmail { background: #d93025; }
+.gmail:hover { background: #a5211b; }
+
+.contact-right .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-right .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-right .form-group input,
+.contact-right .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background: #1f1f3d53;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-right .form-group textarea {
+    resize: none;
+}
+
+.send-btn {
+    background: #4fc2f771;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.send-btn:hover {
+    background: #379fc177;
+}

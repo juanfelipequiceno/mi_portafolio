@@ -1,0 +1,153 @@
+
+/* Custom styles */
+body {
+    background: #0A0E17;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.img {
+    max-width: 100%;
+    height: 420px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------- sobre mi --------------------- */
+
+a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease; /* Solo animación de color */
+}
+
+/* Subrayado animado */
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498db; /* Color del subrayado */
+    transition: width 0.3s ease; /* Animación de la longitud del subrayado */
+}
+
+a:hover {
+    color: #3498db; /* Cambia el color del texto cuando pasa el cursor */
+}
+
+a:hover::after {
+    width: 100%; /* Expande el subrayado cuando pasa el cursor */
+}
+
+/* ----------------------------------------------------------------------- */
+
+.nav-buttons button {
+    background: #ffffff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-buttons button:hover {
+    background: #ffffff;
+}
+
+/* Contenedor de la sección alineado a la izquierda */
+.left-aligned {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-left: 100px; /* Añade un margen izquierdo si deseas separarlo un poco del borde */
+}
+
+/* Estilo de los enlaces sociales alineados a la izquierda */
+.social-icons {
+    display: flex;
+    flex-direction: row; /* Organiza los iconos en fila */
+    gap: 10px; /* Espaciado entre los enlaces */
+}
+
+.social-icons a {
+    text-align: left; /* Asegura que el texto en los enlaces esté alineado a la izquierda */
+}
+
+
+/*--------------------------------- menu------------------------------- */
+
+/* Contenedor principal */
+.nav-buttons {
+    margin-top: 2rem;
+}
+
+/* Barra de navegación flotante en la parte inferior */
+.floating-nav {
+    position: fixed; /* Mantenerlo fijo en la pantalla */
+    bottom: 40px; /* Distancia desde la parte inferior */
+    left: 50%; /* Centrar el menú horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    background: #ffffff0f; /* Fondo oscuro */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado alrededor */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex; /* Usar flexbox para los elementos */
+    justify-content: center; /* Centra los enlaces */
+    gap: 10px; /* Espaciado entre los enlaces */
+}
+
+/* Estilo de los enlaces */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.875rem; /* Tamaño del texto */
+    font-weight: 500;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.3s ease-in-out;
+    width: 80px;
+}
+
+.nav-item.active {
+    color: #3498db; /* Color dorado para el enlace activo */
+    font-weight: bold;
+    
+}
+
+/* Efecto de hover */
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0);
+    transform: translateY(-4px); /* Elevación al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(253, 253, 253, 0);
+}
+
+/* Iconos */
+.icon {
+    font-size: 1.5rem; /* Tamaño del icono */
+    margin-bottom: 0.25rem;
+}
+
+/* Etiquetas */
+.label {
+    font-size: 0.75rem; /* Tamaño del texto debajo del icono */
+}
